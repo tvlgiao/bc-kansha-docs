@@ -1,0 +1,26 @@
+site_name: "Kansha BigCommerce Theme User Guide"
+nav:
+- Home: index.md
+- Usage Guide: usage.md
+- Update Guide: update.md
+- FAQs: faqs.md
+- Support: support.md
+- Release Notes: changelog.md
+theme: readthedocs
+use_directory_urls: false
+
+extra_css:
+  - css/style.css
+
+extra_javascript:
+  - https://use.fontawesome.com/540034d990.js
+
+markdown_extensions:
+- toc:
+    permalink: True
+    separator: "-"
+- sane_lists
+- extra
+- fenced_code
+
+google_analytics: ['UA-241859-16', 'tvlgiao.github.io']
