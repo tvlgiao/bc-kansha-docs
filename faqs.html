@@ -14,7 +14,7 @@
 
   <link rel="stylesheet" href="css/theme.css" />
   <link rel="stylesheet" href="css/theme_extra.css" />
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/styles/github.min.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/10.5.0/styles/github.min.css" />
   <link href="css/style.css" rel="stylesheet" />
   
   <script>
@@ -26,9 +26,8 @@
   
   <script src="js/jquery-2.1.1.min.js" defer></script>
   <script src="js/modernizr-2.8.3.min.js" defer></script>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/highlight.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/10.5.0/highlight.min.js"></script>
   <script>hljs.initHighlightingOnLoad();</script> 
-  
   <script>
       (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
       (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
@@ -49,10 +48,10 @@
     <nav data-toggle="wy-nav-shift" class="wy-nav-side stickynav">
     <div class="wy-side-scroll">
       <div class="wy-side-nav-search">
-        <a href="." class="icon icon-home"> Kansha BigCommerce Theme User Guide</a>
+        <a href="index.html" class="icon icon-home"> Kansha BigCommerce Theme User Guide</a>
         <div role="search">
   <form id ="rtd-search-form" class="wy-form" action="./search.html" method="get">
-    <input type="text" name="q" placeholder="Search docs" title="Type search term here" />
+      <input type="text" name="q" placeholder="Search docs" title="Type search term here" />
   </form>
 </div>
       </div>
@@ -73,6 +72,10 @@
                 <ul class="current">
                     <li class="toctree-l1 current"><a class="reference internal current" href="faqs.html">FAQs</a>
     <ul class="current">
+    <li class="toctree-l2"><a class="reference internal" href="#display-the-product-image-on-the-left-column-on-pdp">Display the product image on the left column on PDP</a>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="#display-mega-menu-with-4-columns">Display mega menu with 4 columns</a>
+    </li>
     </ul>
                     </li>
                 </ul>
@@ -93,7 +96,7 @@
       
       <nav class="wy-nav-top" role="navigation" aria-label="top navigation">
         <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
-        <a href=".">Kansha BigCommerce Theme User Guide</a>
+        <a href="index.html">Kansha BigCommerce Theme User Guide</a>
       </nav>
 
       
@@ -101,7 +104,7 @@
         <div class="rst-content">
           <div role="navigation" aria-label="breadcrumbs navigation">
   <ul class="wy-breadcrumbs">
-    <li><a href=".">Docs</a> &raquo;</li>
+    <li><a href="index.html">Docs</a> &raquo;</li>
     
       
     
@@ -113,10 +116,57 @@
   
   <hr/>
 </div>
+
           <div role="main">
             <div class="section">
               
                 <h1 id="faqs">FAQs<a class="headerlink" href="#faqs" title="Permanent link">&para;</a></h1>
+<h2 id="display-the-product-image-on-the-left-column-on-pdp">Display the product image on the left column on PDP<a class="headerlink" href="#display-the-product-image-on-the-left-column-on-pdp" title="Permanent link">&para;</a></h2>
+<p>Q: On the Product page, flip the product image so that its on the left and the description on the right. (Most US sites are like this)</p>
+<p>A:</p>
+<p>Go to <strong>Storefront</strong> &gt; <strong>Script Manager</strong>, click <strong>Create a Script</strong>, choose:</p>
+<ul>
+<li><strong>Location on page</strong> = <code>Head</code></li>
+<li><strong>Select pages where script will be added</strong> = <code>All Pages</code></li>
+<li><strong>Script type</strong> = <code>Script</code></li>
+</ul>
+<p>Enter the script below to <strong>Scripts contents</strong>:</p>
+<pre><code class="language-html">&lt;script&gt;
+(function() {
+var style = document.createElement('style');
+style.innerHTML = '@media (min-width: 801px) {'
++ '.productView-details { float: right; clear: right; padding-left: 1.5rem; padding-right: 0 }'
++ '.productView-images, .productView-alsoBought--right { float: left; clear: left; padding-left: 0; padding-right: 1.5rem }'
++ '}';
+document.head.appendChild(style);
+})();
+&lt;/script&gt;
+</code></pre>
+<h2 id="display-mega-menu-with-4-columns">Display mega menu with 4 columns<a class="headerlink" href="#display-mega-menu-with-4-columns" title="Permanent link">&para;</a></h2>
+<p>Go to <strong>Storefront</strong> &gt; <strong>Script Manager</strong>, click <strong>Create a Script</strong>, choose:</p>
+<ul>
+<li><strong>Location on page</strong> = <code>Footer</code></li>
+<li><strong>Select pages where script will be added</strong> = <code>All Pages</code></li>
+<li><strong>Script type</strong> = <code>Script</code></li>
+</ul>
+<p>Enter the script below to <strong>Scripts contents</strong>:</p>
+<p>@media (min-width: 801px) {
+    .navPage-subMenu-list { grid-template-columns: repeat(4, minmax(max-content,350px)) }
+    .navPage-subMenu-item:nth-child(3n) { border-right: 1px solid #d6d6d6 }
+    .navPage-subMenu-item:nth-child(4n) { border-right: 0 }
+}</p>
+<pre><code class="language-html">&lt;script&gt;
+(function() {
+var style = document.createElement('style');
+style.innerHTML = '@media (min-width: 801px) {'
++ '.navPage-subMenu-list { grid-template-columns: repeat(4, minmax(max-content,350px)) }'
++ '.navPage-subMenu-item:nth-child(3n) { border-right: 1px solid #d6d6d6 }'
++ '.navPage-subMenu-item:nth-child(4n) { border-right: 0 }'
++ '}'
+;document.head.appendChild(style);
+})();
+&lt;/script&gt;
+</code></pre>
               
             </div>
           </div>
@@ -150,17 +200,18 @@
   </div>
 
   <div class="rst-versions" role="note" aria-label="versions">
-    <span class="rst-current-version" data-toggle="rst-current-version">
-      
-      
-        <span><a href="update.html" style="color: #fcfcfc;">&laquo; Previous</a></span>
-      
-      
-        <span style="margin-left: 15px"><a href="support.html" style="color: #fcfcfc">Next &raquo;</a></span>
-      
-    </span>
+  <span class="rst-current-version" data-toggle="rst-current-version">
+    
+    
+      <span><a href="update.html" style="color: #fcfcfc">&laquo; Previous</a></span>
+    
+    
+      <span><a href="support.html" style="color: #fcfcfc">Next &raquo;</a></span>
+    
+  </span>
 </div>
     <script>var base_url = '.';</script>
+    <script src="js/theme_extra.js" defer></script>
     <script src="js/theme.js" defer></script>
       <script src="https://use.fontawesome.com/540034d990.js" defer></script>
       <script src="search/main.js" defer></script>
