@@ -1,5 +1,8 @@
 # Release Notes
 
+## 1.2.1 (04-20-2023)
+- Fix SCSS Compiler
+
 ## 1.1.2 (03-04-2022)
 - Hide Shop by Brand on the navigation if Sidebar Shop by Brand = Hide
 - Remove header logo css on checkout page
