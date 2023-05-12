@@ -1,5 +1,8 @@
 # Release Notes
 
+## 1.2.2 (05-12-2023)
+- Fix bulk pricing no values on PDP
+
 ## 1.2.1 (04-20-2023)
 - Fix SCSS Compiler
 
