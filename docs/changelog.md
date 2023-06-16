@@ -1,5 +1,8 @@
 # Release Notes
 
+## 1.2.3 (06-16-2023)
+- Fix phone icon and menu overlap on mobile when logo is centered
+
 ## 1.2.2 (05-12-2023)
 - Fix bulk pricing no values on PDP
 
