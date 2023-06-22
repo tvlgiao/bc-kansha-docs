@@ -1,5 +1,19 @@
 # Release Notes
 
+## 1.3.0 (06-22-2023)
+- Fix SCSS Compiler error in fonts-icons.scss
+- Use Node 16.20.0
+- Update from Beautify 1.4.0:
+  - Fix edit cart item display incorrect message when product is unavailable / out of stock
+  - Fixed unavailable options' strikeout display during cart edit
+  - Fix SCSS compiler in fonts-icons.scss for Node 16
+  - Increase warning of asset size limit to 500KB
+  - Display final price after non sale price in price range on PDP
+  - Fix SCSS Compiler
+  - Style PayPal GPay Venmo additional checkout buttons
+  - Update stencil-utils 6.15.0
+  - Rename setting variables: fontSize-*, button-radius, carousel-bgColor-opacity, input-radius, container-border-radius, to change the variable types.
+
 ## 1.2.3 (06-16-2023)
 - Fix phone icon and menu overlap on mobile when logo is centered
 
