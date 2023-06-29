@@ -1,5 +1,8 @@
 # Release Notes
 
+## 1.3.1 (06-29-2023)
+- Fix issue with deleting cart item in version 1.3.0
+
 ## 1.3.0 (06-22-2023)
 - Fix SCSS Compiler error in fonts-icons.scss
 - Use Node 16.20.0
