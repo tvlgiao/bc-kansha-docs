@@ -57,3 +57,7 @@ style.innerHTML = '@media (min-width: 801px) {'
 })();
 </script>
 ```
+
+## Display Different Web Page Links in the Header and Footer
+
+<iframe width="560" height="315" src="https://www.youtube.com/embed/kPuFzTUpM5Q" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
