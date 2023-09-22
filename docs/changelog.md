@@ -1,5 +1,10 @@
 # Release Notes
 
+## 1.3.2 (09-22-2023)
+- Fix cart quantity input change not working
+- Fix to prevent mega menu from overflowing right edge of page
+- Update Webpack 5 + Node 18
+
 ## 1.3.1 (06-29-2023)
 - Fix issue with deleting cart item in version 1.3.0
 
