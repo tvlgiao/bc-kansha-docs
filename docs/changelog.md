@@ -1,5 +1,8 @@
 # Release Notes
 
+## 1.4.0 (08-02-2024)
+- Update code from Beautify 1.5.1.
+
 ## 1.3.2 (09-22-2023)
 - Fix cart quantity input change not working
 - Fix to prevent mega menu from overflowing right edge of page
