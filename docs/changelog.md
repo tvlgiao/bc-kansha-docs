@@ -1,5 +1,12 @@
 # Release Notes
 
+## 1.4.1 (11-15-2024)
+- Fix browser crash when editing options in Bulk Order layout with products that have an empty file
+- Fix undefined 'input-font-color' in add payment methods account page
+- Use Node 20.17
+- bump stencil-utils to 6.18.0
+- Fix scss error theme-mobile.scss
+
 ## 1.4.0 (08-02-2024)
 - Update code from Beautify 1.5.1.
 
