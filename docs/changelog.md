@@ -1,5 +1,9 @@
 # Release Notes
 
+## 1.5.0 (01-20-2025)
+- [CORNERSTONE] Add nonce to scripts in checkout and account pages [#2525](https://github.com/bigcommerce/cornerstone/pull/2525)
+- [CORNERSTONE] Use fetch when updating variants in cart ([#2521](https://github.com/bigcommerce/cornerstone/pull/2521
+
 ## 1.4.1 (11-15-2024)
 - Fix browser crash when editing options in Bulk Order layout with products that have an empty file
 - Fix undefined 'input-font-color' in add payment methods account page
@@ -59,4 +63,3 @@
 
 ## 1.0.0
 - Initial release.
-
