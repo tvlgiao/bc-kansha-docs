@@ -1,5 +1,8 @@
 # Release Notes
 
+## 1.5.1 (02-21-2025)
+- fix sold out badge for hide price from guest
+
 ## 1.5.0 (01-20-2025)
 - [CORNERSTONE] Add nonce to scripts in checkout and account pages [#2525](https://github.com/bigcommerce/cornerstone/pull/2525)
 - [CORNERSTONE] Use fetch when updating variants in cart ([#2521](https://github.com/bigcommerce/cornerstone/pull/2521
