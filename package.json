@@ -1,0 +1,21 @@
+{
+  "name": "bc-kansha-docs-uploader",
+  "version": "1.0.0",
+  "description": "Upload BC Kansha documentation to AWS S3",
+  "main": "upload-to-s3.js",
+  "scripts": {
+    "upload": "node upload-to-s3.js"
+  },
+  "keywords": [
+    "aws",
+    "s3",
+    "upload",
+    "documentation"
+  ],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "@aws-sdk/client-s3": "^3.668.0",
+    "mime-types": "^2.1.35"
+  }
+}
