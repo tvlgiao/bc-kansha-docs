@@ -6,7 +6,9 @@ nav:
 - FAQs: faqs.md
 - Support: support.md
 - Release Notes: changelog.md
-theme: readthedocs
+theme:
+  name: readthedocs
+  custom_dir: overrides
 use_directory_urls: false
 
 extra_css:
