@@ -1,5 +1,13 @@
 # Release Notes
 
+## 1.5.3 (04-24-2026)
+- [CORNERSTONE] Dispatch an event on productOptionsChanged (#2400)
+- [CORNERSTONE] Fix: swap content/data keys in onProductOptionsChanged event detail (#2640)
+- feat: add page transition splash overlay (#2)
+
+## 1.5.2 (04-30-2025)
+- Fix missing product schema.org on PDP
+
 ## 1.5.1 (02-21-2025)
 - fix sold out badge for hide price from guest
 
