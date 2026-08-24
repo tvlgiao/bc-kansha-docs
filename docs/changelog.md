@@ -1,5 +1,9 @@
 # Release Notes
 
+## 1.6.0 (08-24-2026)
+- feat: backorder & stock messaging on PDP, cart, cart drawer and account order details (#5)
+- feat: Featured Promotions callout on product cards, list items and PDP, with theme settings to toggle it and set its colors (#6)
+
 ## 1.5.3 (04-24-2026)
 - [CORNERSTONE] Dispatch an event on productOptionsChanged (#2400)
 - [CORNERSTONE] Fix: swap content/data keys in onProductOptionsChanged event detail (#2640)
